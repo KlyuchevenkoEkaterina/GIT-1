@@ -15,16 +15,20 @@ namespace ChangeNumbers
                 String num = k.ToString();
                 if (k % 3 == 0)
                 {
-                    Console.Write("3*" + k / 3);
+                    num = "Tutti";
                 }
-                else
+                if (k % 5 == 0)
                 {
-                    Console.Write(" " + num + " ");
+                    num = "Frutti";
                 }
+                if ((k % 3 == 0) && (k % 5 == 0))
+                {
+                    num = "Tutti - Frutti";
+                }
+                Console.Write(" " + num + " ");
             }
             Console.Write("\nPress any key...");
             Console.ReadKey();
         }
     }
-
 }
