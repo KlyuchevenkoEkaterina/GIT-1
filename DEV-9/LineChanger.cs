@@ -1,13 +1,14 @@
 ﻿using System;
 namespace RandomChangeOfaConsecutiveGroupOfSymbols
 {
-    class LineChange
+    //This class includes fields, a constructor, and a method 
+    //that allows to insert a random substring into a random position.
+    class LineChanger
     {      
         public string firstLine { get; set; }
         public string secondLine { get; set; }
     
-
-        public LineChange(string FirstLine, string SecondLine)
+        public LineChanger(string FirstLine, string SecondLine)
         {
             firstLine = FirstLine;
             secondLine = SecondLine;
@@ -16,7 +17,7 @@ namespace RandomChangeOfaConsecutiveGroupOfSymbols
         Random rand = new Random();
         //The method randomly selects a sequential group of symbols in one line, 
         //and replaces with another group of characters of the same length.
-        public string ReplacementSubstring()
+        public string ReplaceString()
         {
             int indexSubstringBegin = rand.Next(0, firstLine.Length);
             int lengthSubstring = rand.Next(1, firstLine.Length - indexSubstringBegin);

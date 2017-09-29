@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LineChange.cs" />
+    <Compile Include="LineChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
